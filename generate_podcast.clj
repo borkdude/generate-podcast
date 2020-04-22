@@ -29,8 +29,7 @@
   (xml/element
    :rss {}
    (xml/element
-    :channel {:version "2.0"
-              :xmlns/itunes "http://www.itunes.com/dtds/podcast-1.0.dtd"}
+    :channel {}
     (xml/element :title {} title)
     (xml/element :link {} (str base-url "/" podcast-file))
     (for [^File f (file-seq (io/file "."))
@@ -38,8 +37,7 @@
       (item f base-url)))))
 
 (def cli-options
-  [["-f" "--file FILE" "Podcast file to generate"
-    :default "podcast.xml"]
+  [["-f" "--file FILE" "Podcast file to generate"]
    ["-t" "--title TITLE" "Title for the podcast"]
    ["-b" "--base-url URL" "Base URL of server"]
    ["-h" "--help"]])

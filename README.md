@@ -1,8 +1,8 @@
 # Generate podcast
 
 A [babashka](https://github.com/borkdude/babashka/) script to transform a
-directory of mp3 files into a XML file that can read by iTunes to subscribe as
-podcast.
+directory of mp3 files into a XML file that can be used to subscribe as a
+podcast in iTunes (and possibly other music programs?).
 
 This is a great way to enjoy conference talks on your iPod or mobile phone.
 
@@ -36,8 +36,9 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
    -t --title TITLE Title for the podcast
    -b --base-url URL Base URL of server
    -h --help
-   $ generate_podcast.clj -p conj2019.xml -b http://localhost:8000 -t "Clojure Conj 2019"
-   Written podcast for Clojure Conj 2019 at podcast.xml
+
+   $ generate_podcast.clj -f conj2019.xml -b http://localhost:8000 -t "Clojure Conj 2019"
+   Written podcast for Clojure Conj 2019 at conj2019.xml
    ```
 
 - In iTunes, subscribe to the podcast: `File > Subscribe to podcast > http://localhost:8000/conj2019.xml`.
