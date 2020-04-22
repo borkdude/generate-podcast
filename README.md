@@ -28,7 +28,7 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
    $ python -m SimpleHTTPServer
    ```
 
-- In another session generate the podcast file from inside the mp3-files directory:
+- In another shell, generate the podcast file from inside the mp3-files directory:
 
    ``` shell
    $ generate_podcast.clj -h
