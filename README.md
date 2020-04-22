@@ -6,6 +6,8 @@ podcast in iTunes (and possibly other music programs?).
 
 This is a great way to enjoy conference talks on your iPod or mobile phone.
 
+<img src="nano.jpg" width="50%">
+
 ## Usage
 
 - Install [babashka](https://github.com/borkdude/babashka/).
@@ -44,8 +46,6 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
 - In iTunes, subscribe to the podcast: `File > Subscribe to podcast > http://localhost:8000/conj2019.xml`.
 
 Happy listening!
-
-<img src="nano.jpg">
 
 ## License
 
