@@ -1,7 +1,7 @@
 # Generate podcast
 
 A [babashka](https://github.com/borkdude/babashka/) script to transform a
-directory of mp3 files into a XML file that can be used to subscribe as a
+directory of mp3 files into an XML file that can be used to subscribe as a
 podcast in iTunes (and possibly other music programs?).
 
 This is a great way to enjoy conference talks on your iPod or mobile phone.
