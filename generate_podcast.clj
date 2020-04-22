@@ -44,7 +44,7 @@
 
 (defn print-help
   []
-  (println "podcast.clj:")
+  (println "generate_podcast.clj:")
   (println)
   (doseq [o cli-options]
     (apply println o)))

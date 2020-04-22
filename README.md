@@ -33,7 +33,7 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
    ``` shell
    $ cd conj2019
    $ generate_podcast.clj -h
-   podcast.clj:
+   generate_podcast.clj:
 
    -f --file FILE Podcast file to generate :default podcast.xml
    -t --title TITLE Title for the podcast
