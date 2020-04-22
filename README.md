@@ -26,6 +26,7 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
 
    ``` shell
    $ python -m SimpleHTTPServer
+   Serving HTTP on 0.0.0.0 port 8000 ...
    ```
 
 - In another shell, generate the podcast file from inside the mp3-files directory:
