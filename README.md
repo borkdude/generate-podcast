@@ -31,6 +31,7 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
 - In another shell, generate the podcast file from inside the mp3-files directory:
 
    ``` shell
+   $ cd conj2019
    $ generate_podcast.clj -h
    podcast.clj:
 
