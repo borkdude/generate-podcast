@@ -1,17 +1,19 @@
 #!/usr/bin/env bb
 
-(require '[clojure.java.io :as io]
-         '[clojure.data.xml :as xml]
-         '[clojure.string :as str]
-         '[clojure.tools.cli :as cli])
-(import '[java.nio.file Files LinkOption])
+(ns generate-podcast
+  (:require [clojure.java.io :as io]
+            [clojure.data.xml :as xml]
+            [clojure.string :as str]
+            [clojure.tools.cli :as cli])
+  (:import [java.io File]
+           [java.nio.file Files LinkOption]))
 
-(defn created [^java.io.File f]
+(defn created [^File f]
   (-> (.toPath f)
       (Files/getAttribute  "creationTime" (into-array LinkOption []))
       str))
 
-(defn item [^java.io.File f base-url]
+(defn item [^File f base-url]
   (xml/element
    :item
    {}
@@ -31,7 +33,8 @@
               :xmlns/itunes "http://www.itunes.com/dtds/podcast-1.0.dtd"}
     (xml/element :title {} title)
     (xml/element :link {} (str base-url "/" podcast-file))
-    (for [f (file-seq (io/file "."))]
+    (for [^File f (file-seq (io/file "."))
+          :when (str/ends-with? (.getName f) ".mp3")]
       (item f base-url)))))
 
 (def cli-options

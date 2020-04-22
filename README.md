@@ -8,6 +8,7 @@ This is a great way to enjoy conference talks on your iPod or mobile phone.
 
 ## Usage
 
+- Install [babashka](https://github.com/borkdude/babashka/).
 - Place the script `generate_podcast.clj` somewhere on your path.
 
 - Create a directory with `.mp3` files. E.g. download [Clojure Conj
