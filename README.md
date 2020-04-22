@@ -43,7 +43,7 @@ as mp3 files with [youtube-dl](https://github.com/ytdl-org/youtube-dl).
 
 Happy listening!
 
-<img src="nano.jpg"/>
+<img src="nano.jpg" width="50%">
 
 ## License
 
